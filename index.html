@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <! This style sheet is taken from  https://www.w3schools.com/howto/howto_js_tabs.asp>
+    <link href="styles/styles.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+    <h1>Frilless</h1>
+    <!-- Tab links, each one with an onclick event associated with it -->
+    <div class="tab">
+        <button class="tablinks" onclick="openInfo(event, 'Client')">Client</button>
+        <button class="tablinks" onclick="openInfo(event, 'Products')">Products</button>
+        <button class="tablinks" onclick="openInfo(event, 'Cart')">Cart</button>
+    </div>
+
+    <!-- Tab content -->
+    <div id="Client" class="tabcontent">
+        <h3>Client Information</h3>
+        <p>Tell us what kind of groceries you want.</p>
+        Choose a Category:<br>
+        <input type="checkbox" id="vegetarian" name="categories" onclick="populateListProductChoices(this.name,'displayProduct')">
+        <label for="vegetarian">vegetarian</label><br>
+        <input type="checkbox" id="glutenfree" name="categories" onclick="populateListProductChoices(this.name,'displayProduct')">
+        <label for="glutenfree">glutenfree</label><br>
+        <input type="checkbox" id="organic" name="categories" onclick="populateListProductChoices(this.name,'displayProduct')">
+        <label for="organic">organic</label><br>
+        <input type="checkbox" id="nonorganic" name="categories" onclick="populateListProductChoices(this.name, 'displayProduct')">
+        <label for="nonorganic">nonorganic</label><br>
+    </div>
+
+    <div id="Products" class="tabcontent">
+        <h3>Your targeted products</h3>
+        <p>We preselected products based on your restrictions.</p>
+        Choose items to buy:
+        <div id="displayProduct"></div>
+        <button id="addCart" type="button" class="block" onclick="selectedItems()">
+		Add selected items to cart.
+	  </button>
+    </div>
+
+    <div id="Cart" class="tabcontent">
+        <h3>Cart</h3>
+        <p>Here is your cart.</p>
+        <div id="displayCart"></div>
+    </div>
+
+    <p id="signature">Site created by Mayowa Awosiyan, Wilson Huang, and Uvil Dahanayake. </p>
+
+    <script src="scripts/groceries.js"></script>
+    <script src="scripts/main.js"></script>
+
+</body>
+
+</html>

@@ -3,7 +3,7 @@
 
 var products = [
   {
-    name: "broccoli",
+    name: "Broccoli",
     vegetarian: true,
     glutenFree: true,
     organic: true,
@@ -11,7 +11,7 @@ var products = [
     price: 1.99,
   },
   {
-    name: "bread",
+    name: "Bread",
     vegetarian: true,
     glutenFree: false,
     organic: false,
@@ -19,7 +19,7 @@ var products = [
     price: 2.35,
   },
   {
-    name: "salmon",
+    name: "Salmon",
     vegetarian: false,
     glutenFree: true,
     organic: true,
@@ -27,7 +27,7 @@ var products = [
     price: 9.99,
   },
   {
-    name: "cucumber",
+    name: "Cucumber",
     vegetarian: true,
     glutenFree: true,
     organic: false,
@@ -35,7 +35,7 @@ var products = [
     price: 3.69,
   },
   {
-    name: "cheese",
+    name: "Cheese",
     vegetarian: true,
     glutenFree: true,
     organic: false,
@@ -43,7 +43,7 @@ var products = [
     price: 9.99,
   },
   {
-    name: "beef",
+    name: "Beef",
     vegetarian: false,
     glutenFree: true,
     organic: true,
@@ -51,7 +51,7 @@ var products = [
     price: 5.99,
   },
   {
-    name: "milk",
+    name: "Milk",
     vegetarian: true,
     glutenFree: true,
     organic: true,
@@ -59,7 +59,7 @@ var products = [
     price: 5.69,
   },
   {
-    name: "sausages",
+    name: "Sausages",
     vegetarian: false,
     glutenFree: false,
     organic: true,
@@ -67,7 +67,7 @@ var products = [
     price: 7.99,
   },
   {
-    name: "cereal",
+    name: "Cereal",
     vegetarian: true,
     glutenFree: false,
     organic: true,
@@ -75,7 +75,7 @@ var products = [
     price: 4.88,
   },
   {
-    name: "pancake mix",
+    name: "Pancake Mix",
     vegetarian: true,
     glutenFree: false,
     organic: true,

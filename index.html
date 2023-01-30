@@ -7,7 +7,7 @@
 </head>
 
 <body>
-    <h1>Frilless</h1>
+    <h1>Frill-less</h1>
     <!-- Tab links, each one with an onclick event associated with it -->
     <div class="tab">
         <button class="tablinks" onclick="openInfo(event, 'Client')">Client</button>
@@ -19,15 +19,15 @@
     <div id="Client" class="tabcontent">
         <h3>Client Information</h3>
         <p>Tell us what kind of groceries you want.</p>
-        Choose a Category:<br>
+        Please select your desired restrictions:<br>
         <input type="checkbox" id="vegetarian" name="categories" onclick="populateListProductChoices(this.name,'displayProduct')">
-        <label for="vegetarian">vegetarian</label><br>
+        <label for="vegetarian">Vegetarian</label><br>
         <input type="checkbox" id="glutenfree" name="categories" onclick="populateListProductChoices(this.name,'displayProduct')">
-        <label for="glutenfree">glutenfree</label><br>
+        <label for="glutenfree">Glutenfree</label><br>
         <input type="checkbox" id="organic" name="categories" onclick="populateListProductChoices(this.name,'displayProduct')">
-        <label for="organic">organic</label><br>
+        <label for="organic">Organic</label><br>
         <input type="checkbox" id="nonorganic" name="categories" onclick="populateListProductChoices(this.name, 'displayProduct')">
-        <label for="nonorganic">nonorganic</label><br>
+        <label for="nonorganic">Non-organic</label><br>
     </div>
 
     <div id="Products" class="tabcontent">
@@ -36,7 +36,7 @@
         Choose items to buy:
         <div id="displayProduct"></div>
         <button id="addCart" type="button" class="block" onclick="selectedItems()">
-		Add selected items to cart.
+		Add selected item(s) to cart.
 	  </button>
     </div>
 
@@ -46,7 +46,7 @@
         <div id="displayCart"></div>
     </div>
 
-    <p id="signature">Site created by Mayowa Awosiyan, Wilson Huang, and Uvil Dahanayake. </p>
+    <p id="signature">Site created by Mayowa Awosiyan, Wilson Huang, Uvil Dahanayake, and Curtis Underwood. </p>
 
     <script src="scripts/groceries.js"></script>
     <script src="scripts/main.js"></script>
